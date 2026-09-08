@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>PROJECT ZERO</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#080b10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PROJECT ZERO">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div class="top"><b>PROJECT ZERO</b><span id="score">ROUND 01 • 0 : 0</span></div>
+  <div id="crosshair">+</div>
+  <div class="bottom">
+    <div class="weapon"><b id="weapon">VXR-9</b><small id="ammo">30 / 120</small></div>
+    <button id="reload">↻</button><button id="fire">FIRE</button>
+  </div>
+  <div id="message"></div>
+</div>
+<div id="mobile">
+  <div id="stickL" class="stick"><i></i></div>
+  <div id="stickR" class="stick"><i></i></div>
+</div>
+<script src="game.js"></script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("./sw.js")}</script>
+</body>
+</html>
